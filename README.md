@@ -1,4 +1,7 @@
-#  Global Supply Chain Analytics & Risk Management
+#  Supply Chain Analytics & Risk Management
+
+##  Note from Masrur
+Hey there, and thanks for stopping by. I built this project to show, hands-on, how I use data to make supply chain decisions, the kind of work I do day to day as a program manager. It walks through the full journey: pulling insight out of raw transactional data with SQL, and turning it all into dashboards for KPI tracking and executive business review. I had a lot of fun building it, and I hope it gives you a clear sense of how I think and work. Feel free to dig into any piece that interests you.
 
 ## Project Overview
 This repository contains a production-grade, end-to-end data analytics and business intelligence solution for a multi-regional supply chain network. Utilizing a relational dataset engineered to track performance across five strategic business units (**Programs A, B, C, D, and E**), this project bridges the gap between raw backend transactional data and high-level executive decision-making.
