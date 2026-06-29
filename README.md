@@ -16,7 +16,7 @@ The project encompasses:
 ### Power BI | Advanced Business Intelligence
 *Interactive executive-level reporting pipeline used for strategic QBR reviews.*
 
-![Power BI Preview]https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/93f14fc85388cc4a6c86673642c2960d63d310bf/PbDB.png
+![Power BI Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/93f14fc85388cc4a6c86673642c2960d63d310bf/PbDB.png)
 
 <br/>
 
