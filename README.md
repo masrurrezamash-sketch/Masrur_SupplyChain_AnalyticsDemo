@@ -3,14 +3,18 @@
 ##  Note from Masrur
 Hey there, and thanks for stopping by. I built this project to show, hands-on, how I use data to make supply chain decisions, the kind of work I do day to day as a program manager. It walks through the full journey: pulling insight out of raw transactional data with SQL, and turning it all into dashboards for KPI tracking and executive business review. I had a lot of fun building it, and I hope it gives you a clear sense of how I think and work. Feel free to dig into any piece that interests you.
 
+##  About the Data (please read first)
+Everything here runs on a **fully synthetic, anonymized dataset** I built specifically for this demonstration. Every supplier (Supplier 1 to 16), factory (Factory 1 to 5), and program (Program A to E) is a generic placeholder. There is **no proprietary or confidential information from any specific organization anywhere in this project.**
+
+The dataset is designed to mirror the *structure* of a real data-center hardware supply chain, hardware components, lead times, demand signals, inventory positions, and purchase orders, so the analytical methods are realistic and transferable. Every value in it is fabricated.
+
 ## Project Overview
-This repository contains a production-grade, end-to-end data analytics and business intelligence solution for a multi-regional supply chain network. Utilizing a relational dataset engineered to track performance across five strategic business units (**Programs A, B, C, D, and E**), this project bridges the gap between raw backend transactional data and high-level executive decision-making.
+This repository is an end-to-end supply chain analytics and business intelligence project for a multi-regional network, tracking performance across five business units (Programs A through E). The goal is to bridge raw backend data and high-level executive decision-making, the same gap I work to close in my role.
 
 The project encompasses:
-*   **Database Engineering & Schema DDL:** Initializing structured relational instances with enforced referential integrity.
-*   **Advanced SQL Prototyping:** Extracting operational insights, logistical bottleneck buckets, and Pareto distribution metrics.
-*   **Python Predictive Analytics:** Implementing an automated data validation audit and deploying an advanced Holt-Winters Exponential Smoothing model to forecast aggregate demand.
-*   **Interactive BI Dashboards:** Building responsive, executive-ready analytical interfaces across Power BI and Microsoft Excel.
+* **SQL** | The analytical engine. Extracting operational insights, logistics bottleneck buckets, supplier performance, and Pareto spend distribution using CTEs, window functions, and multi-table joins.
+* **Power BI** | The executive view. A fully interactive QBR dashboard where slicers filter every  KPI and chart live, from a global view down to a single region in one click.
+* **Excel** | The working dashboard. A 100% formula-driven, interactive QBR workbook, no macros, with live KPI cards, demand forecast-vs-actual tracking, ranked supplier and risk tables, and dynamic dropdown slicers.
 
 ---
 
