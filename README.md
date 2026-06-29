@@ -21,14 +21,15 @@ The project encompasses:
 ## Data Visualization & Reporting
 
 ### Power BI | Advanced Business Intelligence
-*Interactive executive-level reporting pipeline used for strategic QBR reviews.*
+*An interactive QBR dashboard. The slicers filter every KPI and chart live, so you can move from a global view down to a single region or program in one click. Tracks spend, on-time delivery, coverage risk, clean-launch rate, supplier concentration (Pareto), and the demand forecast-vs-actual gap.*
 
 ![Power BI Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/93f14fc85388cc4a6c86673642c2960d63d310bf/PbDB.png)
 
 <br/>
 
 ### Excel | Operational Tracking & Analytics
-*Custom scenario tracking and core database management workbook.*
+*A fully formula-driven dashboard built entirely on native Excel, no macros, no VBA. Six live KPI cards, a demand forecast-vs-actual trend, a purchase-order status breakdown, ranked Top 5 supplier and at-risk-parts tables, and shortage risk by region, all driven by dynamic dropdown slicers.
+Change a dropdown and every KPI and chart recalculates instantly.*
 
 ![Excel Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/16e903d32a9bd16e3ecb0011531a6ee69336aa56/ExcelDashboard.png)
 
