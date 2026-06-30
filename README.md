@@ -13,14 +13,14 @@ This repository is an end-to-end supply chain analytics and business intelligenc
 
 The project encompasses:
 * **SQL** | The analytical engine. Extracting operational insights, logistics bottleneck buckets, supplier performance, and Pareto spend distribution using CTEs, window functions, and multi-table joins.
-* **Power BI** | The executive view. A fully interactive QBR dashboard where slicers filter every  KPI and chart live, from a global view down to a single region in one click.
+* **Power BI** | The executive view. A fully interactive QBR dashboard where slicers filter every KPI and chart live, from a global view down to a single region in one click.
 * **Excel** | The working dashboard. A 100% formula-driven, interactive QBR workbook, no macros, with live KPI cards, demand forecast-vs-actual tracking, ranked supplier and risk tables, and dynamic dropdown slicers.
 
 ---
 
 ## Data Visualization & Reporting
 
-### Power BI | Advanced Business Intelligence
+### Power BI | Executive Business Review Dashboard
 *An interactive QBR dashboard. The slicers filter every KPI and chart live, so you can move from a global view down to a single region or program in one click. Tracks spend, on-time delivery, coverage risk, clean-launch rate, supplier concentration (Pareto), and the demand forecast-vs-actual gap.*
 
 ![Power BI Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/93f14fc85388cc4a6c86673642c2960d63d310bf/PbDB.png)
@@ -28,7 +28,7 @@ The project encompasses:
 
 <br/>
 
-### Excel | Operational Tracking & Analytics
+### Excel | Operational Tracking & Analytics Dashboard
 *A fully formula-driven dashboard built entirely on native Excel, no macros, no VBA. Six live KPI cards, a demand forecast-vs-actual trend, a purchase-order status breakdown, ranked Top 5 supplier and at-risk-parts tables, and shortage risk by region, all driven by dynamic dropdown slicers.
 Change a dropdown and every KPI and chart recalculates instantly.*
 
@@ -41,7 +41,7 @@ Change a dropdown and every KPI and chart recalculates instantly.*
 *Standard SQL (CTEs, window functions, conditional aggregation, multi-table joins) written to extract the metrics that drive supply chain decisions.*
 
 ### 1. Financial Exposure: Spend-at-Risk Query
-*Tracks total financial exposure and delayed units caused by logistics bottlenecks across manufacturing factories.*
+*Tracks total financial exposure and delayed values(units) caused by logistics bottlenecks across manufacturing factories.*
 ![SQL Output 1](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput1.png)
 
 <br/>
@@ -53,7 +53,7 @@ Change a dropdown and every KPI and chart recalculates instantly.*
 <br/>
 
 ### 3. Supplier Performance & Pareto Spend Distribution
-**Evaluates vendor delivery metrics and classifies spend into tiers to pinpoint supplier concentration risk.*
+*Evaluates vendor delivery metrics and classifies spend into tiers to pinpoint supplier concentration risk.*
 ![SQL Output 3](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput3.png)
 
 <br/>
@@ -75,4 +75,5 @@ SUMIFS/COUNTIFS, XLOOKUP, INDEX/MATCH, conditional formatting)
 
 *Thanks again for taking the time to look through my work. Whether you are a recruiter, a hiring manager, a fellow supply chain or data professional, or simply someone curious and looking to learn, I would love to connect. I am always happy to walk through my approach, talk shop, or trade ideas, so please do not hesitate to reach out. :)*
 
-*— Masrur*
+*— Masrur
+https://linkedin.com/in/masrur-mash*
