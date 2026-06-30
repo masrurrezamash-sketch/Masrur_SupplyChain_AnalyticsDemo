@@ -32,7 +32,7 @@ The project encompasses:
 *A fully formula-driven dashboard built entirely on native Excel, no macros, no VBA. Six live KPI cards, a demand forecast-vs-actual trend, a purchase-order status breakdown, ranked Top 5 supplier and at-risk-parts tables, and shortage risk by region, all driven by dynamic dropdown slicers.
 Change a dropdown and every KPI and chart recalculates instantly.*
 
-![Excel Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/16e903d32a9bd16e3ecb0011531a6ee69336aa56/ExcelDashboard.png)
+![Excel Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/358e437ed8f9623a82bc62546f5b5cd4fa469218/ExcelDashboard.png.jpg)
 
 **Techniques used:** Excel Tables with structured references, dynamic dropdown slicers, SUMIFS / COUNTIFS / AVERAGEIFS with wildcard logic, XLOOKUP, LARGE + INDEX/MATCH for dynamic ranking, IFERROR guards, and conditional formatting, all native, nothing hard-coded.
 ---
