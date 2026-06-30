@@ -25,11 +25,11 @@ The project encompasses:
 
 ![Power BI Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/93f14fc85388cc4a6c86673642c2960d63d310bf/PbDB.png)
 
-*Based on the demo dashboard:
+Based on the demo dashboard:
 - Shortage risk is concentrated in specific parts with coverage below lead time.
 - Supplier concentration should be reviewed where cumulative spend exceeds 80%.
 - Programs with high forecast variance should receive demand-planning review before procurement commits.
-- NPI launches with low sourcing diversity should be escalated before production ramp.*
+- NPI launches with low sourcing diversity should be escalated before production ramp.
 
 <br/>
 
