@@ -12,9 +12,9 @@ The dataset is designed to mirror the *structure* of a real data-center hardware
 This repository is an end-to-end supply chain analytics and business intelligence project for a multi-regional network, tracking performance across five business units (Programs A through E). The goal is to bridge raw backend data and high-level executive decision-making, the same gap I work to close in my role.
 
 The project encompasses:
-* **SQL** | The analytical engine. Extracting operational insights, logistics bottleneck buckets, supplier performance, and Pareto spend distribution using CTEs, window functions, and multi-table joins.
-* **Power BI** | The executive view. A fully interactive QBR dashboard where slicers filter every KPI and chart live, from a global view down to a single region in one click.
-* **Excel** | The working dashboard. A 100% formula-driven, interactive QBR workbook, no macros, with live KPI cards, demand forecast-vs-actual tracking, ranked supplier and risk tables, and dynamic dropdown slicers.
+* **SQL** | The analytical engine. Answers a specific operational question, what is at risk, what is depleting, where is supplier risk concentrated, using CTEs, window functions, and multi-table joins.
+* **Power BI** | The executive view. A fully interactive QBR dashboard where slicers filter every KPI and chart live, from a global view down to a single region in one click which can turn a status review into a decision meeting.
+* **Excel** | The working dashboard. A 100% formula-driven, interactive workbook, no macros, with live KPI cards, demand forecast-vs-actual tracking, ranked supplier and risk tables, and dynamic dropdown slicers. 
 
 ---
 
