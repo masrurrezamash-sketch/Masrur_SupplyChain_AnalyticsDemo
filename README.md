@@ -34,7 +34,8 @@ Change a dropdown and every KPI and chart recalculates instantly.*
 
 ![Excel Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/358e437ed8f9623a82bc62546f5b5cd4fa469218/ExcelDashboard.png.jpg)
 
-**Techniques used:** Excel Tables with structured references, dynamic dropdown slicers, SUMIFS / COUNTIFS / AVERAGEIFS with wildcard logic, XLOOKUP, LARGE + INDEX/MATCH for dynamic ranking, IFERROR guards, and conditional formatting, all native, nothing hard-coded.
+
+*Techniques used:** Excel Tables with structured references, dynamic dropdown slicers, SUMIFS / COUNTIFS / AVERAGEIFS with wildcard logic, XLOOKUP, LARGE + INDEX/MATCH for dynamic ranking, IFERROR guards, and conditional formatting, all native, nothing hard-coded.
 ---
 
 ##  SQL | Core Supply Chain KPIs
