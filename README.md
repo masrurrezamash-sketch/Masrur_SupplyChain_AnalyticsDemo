@@ -43,7 +43,7 @@ Change a dropdown and every KPI and chart recalculates instantly.*
 *Standard SQL (CTEs, window functions, conditional aggregation, multi-table joins) written to extract the metrics that drive supply chain decisions.*
 
 ### 1. Financial Exposure: Spend-at-Risk Query
-*Tracks total financial exposure and delayed values(units) caused by logistics bottlenecks across manufacturing factories.*
+*Tracks total financial exposure and delayed units caused by logistics bottlenecks across manufacturing factories.*
 ![SQL Output 1](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput1.png)
 
 <br/>
@@ -77,5 +77,6 @@ SUMIFS/COUNTIFS, XLOOKUP, INDEX/MATCH, conditional formatting)
 
 *Thanks again for taking the time to look through my work. Whether you are a recruiter, a hiring manager, a fellow supply chain or data professional, or simply someone curious and looking to learn, I would love to connect. I am always happy to walk through my approach, talk shop, or trade ideas, so please do not hesitate to reach out. :)*
 
-*— Masrur
-https://linkedin.com/in/masrur-mash*
+*— Masrur*
+
+[Connect with me on LinkedIn](https://linkedin.com/in/masrur-mash)
