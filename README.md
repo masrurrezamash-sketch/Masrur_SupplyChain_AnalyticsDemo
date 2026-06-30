@@ -1,4 +1,4 @@
-#  Supply Chain Analytics & Risk Management
+#  Enterprise Supply Chain Risk & NPI Readiness Analytics Platform
 
 ##  Note from Masrur
 Hey there, and thanks for stopping by. I built this project to show, hands-on, how I use data to make supply chain decisions, the kind of work I do day to day as a program manager. It walks through the full journey: pulling insight out of raw transactional data with SQL, and turning it all into dashboards for KPI tracking and executive business review. I had a lot of fun building it, and I hope it gives you a clear sense of how I think and work. Feel free to dig into any piece that interests you.
