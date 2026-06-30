@@ -2,7 +2,7 @@
 ====================================================================================
 PROJECT: ENTERPRISE SUPPLY CHAIN ANALYTICS & RISK MANAGEMENT
 DATASET: Masrur Supply Chain Analytics (Programs A-E)
-DIALECT: Standard SQL (Snowflake / PostgreSQL / MS SQL Server / BigQuery compatible)
+DIALECT: Written in ANSI-style SQL and tested in PostgreSQL / BigQuery / SQL Server.
 
 DESCRIPTION: 
 This comprehensive script utilizes advanced SQL techniques (CTEs, Window Functions, 
