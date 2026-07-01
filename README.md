@@ -11,7 +11,9 @@ The dataset is designed to mirror the *structure* of a real data-center hardware
 ## Project Overview
 This repository is an end-to-end supply chain analytics and business intelligence project for a multi-regional network, tracking performance across five business units (Programs A through E). The goal is to bridge raw backend data and high-level executive decision-making, the same gap I work to close in my role.
 
-The project encompasses:
+## Business Design Flow
+
+This project follows a simple operating model:
 * **SQL** | The analytical engine. Answers a specific operational question, what is at risk, what is depleting, where is supplier risk concentrated, using CTEs, window functions, and multi-table joins.
 * **Power BI** | The executive view. A fully interactive QBR dashboard where slicers filter every KPI and chart live, from a global view down to a single region in one click which can turn a status review into a decision meeting.
 * **Excel** | The working dashboard. A 100% formula-driven, interactive workbook, no macros, with live KPI cards, demand forecast-vs-actual tracking, ranked supplier and risk tables, and dynamic dropdown slicers. 
@@ -26,7 +28,7 @@ The project encompasses:
 ![Power BI Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/93f14fc85388cc4a6c86673642c2960d63d310bf/PbDB.png)
 
 Based on the demo dashboard leadership can be made aware at a single glance:
-- The red flagged parts which require a recovery plan
+- Red flagged parts which require a recovery plan
 - Top 5 suppliers driving nearly half of all spend and whether this supplier concentration calls for a second source
 - Whether the forecast gap is a one-off or a trend that needs to be reviewed with demand planning.
 
@@ -40,10 +42,10 @@ Based on the demo dashboard leadership can be made aware at a single glance:
 
 
 Through this operational dashboard, a program manager can:
-- Filter to a single region or program and instantly see on-time delivery% and open PO value which can be drilled down and investigated on
+- Filter to a single region or program and instantly see on-time delivery% and open PO value which can be drilled into for root-cause investigation
 - Snapshot of overall inventory health in each region and where to reallocate inventory
 - Top 5 parts at risk ranked by coverage which require a recovery plan, risk buys
-- Overall Clean Launch% for NPI milestones which can be drilled down to locate exact status, challange and next step
+- Overall Clean Launch% for NPI milestones which can be drilled down to locate exact status, challenge and next step
 - Snapshot of supplier performance which determines high performers and suppliers that require attention
 
 
@@ -58,7 +60,7 @@ Through this operational dashboard, a program manager can:
 *Tracks total financial exposure and delayed units caused by logistics bottlenecks across manufacturing factories.*
 ![SQL Output 1](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput1.png)
 
-**The question it answers:** How much capital is exposed right now, and where? It quantifies the dollars sitting in delayed and open POs, broken out by factory. This tells program manager where to prioritize in order to reduce the highest exposures.
+**The question it answers:** How much capital is exposed right now, and where? It quantifies the dollars sitting in delayed and open POs, broken out by factory. This tells the program manager where to prioritize in order to reduce the highest exposures.
 
 <br/>
 
@@ -66,7 +68,7 @@ Through this operational dashboard, a program manager can:
 *Cross-references inventory on-hand against component burn rates and supplier lead times to flag parts that will stock out before replenishment can arrive.*
 ![SQL Output 2](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput2.png)
 
-**The question it answers:** What is going to run dry before we can refill it? This is the depletion check, coverage weeks measured against lead time. This tells program manager which parts need an emergency order, a deviation, or a reallocation, today, before they stop a build.
+**The question it answers:** What is going to run dry before we can refill it? This is the depletion check, coverage weeks measured against lead time. This tells the program manager which parts need an emergency order, a deviation, or a reallocation, today, before they stop a build.
 
 <br/>
 
@@ -74,7 +76,7 @@ Through this operational dashboard, a program manager can:
 *Evaluates vendor delivery metrics and classifies spend into tiers to pinpoint supplier concentration risk.*
 ![SQL Output 3](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput3.png)
 
-**The question it answers:** Where is our supplier risk concentrated? It ranks suppliers by spend and performance, showing which handful carry most of the exposure. This tells program manager which  suppliers warrant a second source, a scorecard conversation, or tighter management, the highest-leverage places to reduce risk.
+**The question it answers:** Where is our supplier risk concentrated? It ranks suppliers by spend and performance, showing which handful carry most of the exposure. This tells the program manager which  suppliers warrant a second source, a scorecard conversation, or tighter management, the highest-leverage places to reduce risk.
 
 <br/>
 
@@ -82,7 +84,7 @@ Through this operational dashboard, a program manager can:
 *Aggregates forecast-to-actual variance across Programs A to E to surface the parts driving the biggest tracking errors.*
 ![SQL Output 4](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput4.png)
 
-**The question it answers:** Where are our forecasts missing, and which parts are driving it? It isolates the largest forecast-to-actual gaps by program and part. This helps program manager identify where the demand signal needs tightening, because these are the parts most likely to cause surprise shortages downstream.
+**The question it answers:** Where are our forecasts missing, and which parts are driving it? It isolates the largest forecast-to-actual gaps by program and part. This helps the program manager identify where the demand signal needs tightening, because these are the parts most likely to cause surprise shortages downstream.
 
 <br/>
 
@@ -90,7 +92,7 @@ Through this operational dashboard, a program manager can:
 *Monitors milestone completion rates and multi-sourcing percentages to gauge pre-production launch readiness.*
 ![SQL Output 5](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput5.png)
 
-**The question it answers:** Are our new product launches on track and de-risked? It tracks milestone completion and sourcing diversity across programs. This tells program manager which NPIs need more sourcing diversity before they reach mass production.
+**The question it answers:** Are our new product launches on track and de-risked? It tracks milestone completion and sourcing diversity across programs. This tells the program manager which NPIs need more sourcing diversity before they reach mass production.
 
 ##  Tools & Techniques
 **SQL** (CTEs, window functions, conditional aggregation, multi-table joins) · **Power BI**
