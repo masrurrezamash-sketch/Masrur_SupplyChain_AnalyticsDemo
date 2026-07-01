@@ -25,31 +25,39 @@ The project encompasses:
 
 ![Power BI Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/93f14fc85388cc4a6c86673642c2960d63d310bf/PbDB.png)
 
-Based on the demo dashboard:
-- Shortage risk is concentrated in specific parts with coverage below lead time.
-- Supplier concentration should be reviewed where cumulative spend exceeds 80%.
-- Programs with high forecast variance should receive demand-planning review before procurement commits.
-- NPI launches with low sourcing diversity should be escalated before production ramp.
+Based on the demo dashboard leadership can be made aware at a single glance:
+- The red flagged parts which require a recovery plan
+- Top 5 suppliers driving nearly half of all spend and whether this supplier concentration calls for a second source
+- Whether the forecast gap is a one-off or a trend that needs to be reviewed with demand planning.
+
 
 <br/>
 
 ### Excel | Operational Tracking & Analytics Dashboard
-*A fully formula-driven dashboard built entirely on native Excel, no macros, no VBA. Six live KPI cards, a demand forecast-vs-actual trend, a purchase-order status breakdown, ranked Top 5 supplier and at-risk-parts tables, and shortage risk by region, all driven by dynamic dropdown slicers.
-Change a dropdown and every KPI and chart recalculates instantly.*
+*A fully formula-driven dashboard built entirely on native Excel, no macros, no VBA. Six live KPI cards, a demand forecast-vs-actual trend, a purchase-order status breakdown, ranked Top 5 supplier and at-risk-parts tables, and shortage risk by region, all driven by dynamic dropdown slicers. Change a dropdown and every KPI and chart recalculates instantly.*
 
 ![Excel Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/358e437ed8f9623a82bc62546f5b5cd4fa469218/ExcelDashboard.png.jpg)
 
+
+Through this operational dashboard, a program manager can:
+- Filter to a single region or program and instantly see on-time delivery% and open PO value which can be drilled down and investigated on
+- Snapshot of overall inventory health in each region and where to reallocate inventory
+- Top 5 parts at risk ranked by coverage which require a recovery plan, risk buys
+- Overall Clean Launch% for NPI milestones which can be drilled down to locate exact status, challange and next step
+- Snapshot of supplier performance which determines high performers and suppliers that require attention
 
 *Techniques used: Excel Tables with structured references, dynamic dropdown slicers, SUMIFS / COUNTIFS / AVERAGEIFS with wildcard logic, XLOOKUP, LARGE + INDEX/MATCH for dynamic ranking, IFERROR guards, and conditional formatting, all native, nothing hard-coded.*
 
 ---
 
 ##  SQL | Core Supply Chain KPIs
-*Standard SQL (CTEs, window functions, conditional aggregation, multi-table joins) written to extract the metrics that drive supply chain decisions.*
+*Standard SQL (CTEs, window functions, conditional aggregation, multi-table joins) written to extract the metrics that drive supply chain decisions. Each query answers one specific operational question.*
 
 ### 1. Financial Exposure: Spend-at-Risk Query
 *Tracks total financial exposure and delayed units caused by logistics bottlenecks across manufacturing factories.*
 ![SQL Output 1](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput1.png)
+
+**The question it answers:** How much capital is exposed right now, and where? It quantifies the dollars sitting in delayed and open POs, broken out by factory. This tells program manager where to prioritize in order to reduce the highest exposures.
 
 <br/>
 
@@ -57,11 +65,15 @@ Change a dropdown and every KPI and chart recalculates instantly.*
 *Cross-references inventory on-hand against component burn rates and supplier lead times to flag parts that will stock out before replenishment can arrive.*
 ![SQL Output 2](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput2.png)
 
+**The question it answers:** What is going to run dry before we can refill it? This is the depletion check, coverage weeks measured against lead time. This tells program manager which parts need an emergency order, a deviation, or a reallocation, today, before they stop a build.
+
 <br/>
 
 ### 3. Supplier Performance & Pareto Spend Distribution
 *Evaluates vendor delivery metrics and classifies spend into tiers to pinpoint supplier concentration risk.*
 ![SQL Output 3](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput3.png)
+
+**The question it answers:** Where is our supplier risk concentrated? It ranks suppliers by spend and performance, showing which handful carry most of the exposure. This tells program manager which  suppliers warrant a second source, a scorecard conversation, or tighter management, the highest-leverage places to reduce risk.
 
 <br/>
 
@@ -69,11 +81,15 @@ Change a dropdown and every KPI and chart recalculates instantly.*
 *Aggregates forecast-to-actual variance across Programs A to E to surface the parts driving the biggest tracking errors.*
 ![SQL Output 4](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput4.png)
 
+**The question it answers:** Where are our forecasts missing, and which parts are driving it? It isolates the largest forecast-to-actual gaps by program and part. This helps program manager identify where the demand signal needs tightening, because these are the parts most likely to cause surprise shortages downstream.
+
 <br/>
 
 ### 5. NPI Launch Health & Sourcing Diversity
 *Monitors milestone completion rates and multi-sourcing percentages to gauge pre-production launch readiness.*
 ![SQL Output 5](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput5.png)
+
+**The question it answers:** Are our new product launches on track and de-risked? It tracks milestone completion and sourcing diversity across programs. This tells program manager which NPIs need more sourcing diversity before they reach mass production.
 
 ##  Tools & Techniques
 **SQL** (CTEs, window functions, conditional aggregation, multi-table joins) · **Power BI**
