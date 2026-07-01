@@ -46,6 +46,7 @@ Through this operational dashboard, a program manager can:
 - Overall Clean Launch% for NPI milestones which can be drilled down to locate exact status, challange and next step
 - Snapshot of supplier performance which determines high performers and suppliers that require attention
 
+
 *Techniques used: Excel Tables with structured references, dynamic dropdown slicers, SUMIFS / COUNTIFS / AVERAGEIFS with wildcard logic, XLOOKUP, LARGE + INDEX/MATCH for dynamic ranking, IFERROR guards, and conditional formatting, all native, nothing hard-coded.*
 
 ---
