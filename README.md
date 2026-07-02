@@ -1,7 +1,7 @@
 #  Enterprise Supply Chain Risk & NPI Readiness Analytics Platform
 
 ##  Note from Masrur
-Hey there, and thanks for stopping by. I built this project to show, hands-on, how I use data to make supply chain decisions, the kind of work I do day to day as a program manager. It walks through the full journey: pulling insight out of raw transactional data with SQL, and turning it all into dashboards for KPI tracking and executive business review. I had a lot of fun building it, and I hope it gives you a clear sense of how I think and work. Feel free to dig into any piece that interests you.
+Hey there, and thanks for stopping by. I built this project to show, hands-on, how I use data to make supply chain decisions, the kind of work I do day to day as a program manager. It walks through the full journey: pulling insight out of raw transactional data with SQL, and turning it all into dashboards for KPI tracking and executive business review. My analytical and reporting work earned me the title of "Game Changer" in my current role, and that recognition is what inspired me to build this project and share it with the world. I hope it gives you a clear sense of how I think and work. Feel free to dig into any piece that interests you.
 
 ##  About the Data (please read first)
 Everything here runs on a **fully synthetic, anonymized dataset** I built specifically for this demonstration. Every supplier (Supplier 1 to 16), factory (Factory 1 to 5), and program (Program A to E) is a generic placeholder. There is **no proprietary or confidential information from any specific organization anywhere in this project.**
