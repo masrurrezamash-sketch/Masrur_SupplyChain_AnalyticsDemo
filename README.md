@@ -42,11 +42,11 @@ Based on the demo dashboard leadership can be made aware at a single glance:
 
 
 Through this operational dashboard, a program manager can:
-- Filter to a single region or program and instantly see on-time delivery% and open PO value which can be drilled into for root-cause investigation
-- Snapshot of overall inventory health in each region and where to reallocate inventory
-- Top 5 parts at risk ranked by coverage which require a recovery plan, risk buys
-- Overall Clean Launch% for NPI milestones which can be drilled down to locate exact status, challenge and next step
-- Snapshot of supplier performance which determines high performers and suppliers that require attention
+- Filter to a single region or program and instantly review on-time delivery, open PO value which can be drilled into for root-cause investigation
+- View overall inventory health by region and identify where inventory may need to be reallocated
+- Identify the Top 5 at-risk parts by coverage and determine where recovery plans, risk buys, or supplier escalations are needed
+- Review overall Clean Launch % for NPI milestones and drill into the exact status, challenge, and next step
+- Compare supplier performance to identify high performers and suppliers requiring closer management attention
 
 
 *Techniques used: Excel Tables with structured references, dynamic dropdown slicers, SUMIFS / COUNTIFS / AVERAGEIFS with wildcard logic, XLOOKUP, LARGE + INDEX/MATCH for dynamic ranking, IFERROR guards, and conditional formatting, all native, nothing hard-coded.*
@@ -62,7 +62,7 @@ Through this operational dashboard, a program manager can:
 
 **The question it answers:** How much capital is exposed right now, and where? It quantifies the dollars sitting in delayed and open POs, broken out by factory. 
 
-**My recommendation:** Prioritize logistics  on the highest-value delayed POs first, since exposure is concentrated rather than evenly spread. Work with procurement, logistics, and suppliers to confirm recovery dates, unblock receiving issues, and create a weekly recovery tracker for delayed PO exposure.
+**My recommendation:** Prioritize logistics recovery on the highest-value delayed POs first, since exposure is concentrated rather than evenly spread. Work with procurement, logistics, and suppliers to confirm recovery dates, unblock receiving issues, and create a weekly recovery tracker for delayed PO exposure.
 
 <br/>
 
@@ -72,7 +72,7 @@ Through this operational dashboard, a program manager can:
 
 **The question it answers:** What is going to run dry before we can refill it? This is the depletion check, coverage weeks measured against lead time. 
 
-**My recommendation:** Place risk buys or qualify alternate sources now for any part where coverage runs below lead time, and raise the reorder points on these parts to reflect current lead times rather than historical ones, so the early-warning triggers appears on time during next cycle instead of too late.
+**My recommendation:** Place risk buys or qualify alternate sources now for any part where coverage runs below lead time, and raise the reorder points on these parts to reflect current lead times rather than historical ones, so early-warning triggers appears on time during next cycle instead of too late.
 
 <br/>
 
@@ -82,7 +82,7 @@ Through this operational dashboard, a program manager can:
 
 **The question it answers:** Where is our supplier risk concentrated? It ranks suppliers by spend and performance, showing which handful carry most of the exposure. This tells the program manager which suppliers warrant a second source, a scorecard conversation, or tighter management, the highest-leverage places to reduce risk.
 
-**My recommendation:** For high-spend suppliers with elevated risk ratings, initiate executive supplier reviews, require recovery plans, evaluate second-source options.
+**My recommendation:** For high-spend suppliers with elevated risk ratings, initiate executive supplier reviews, require recovery plans, evaluate second-source options, and track corrective actions to closure.
 
 
 <br/>
@@ -105,7 +105,7 @@ Through this operational dashboard, a program manager can:
 
 **My recommendation:** Hold launch readiness reviews before product launch, assign owners to incomplete milestones, and require mitigation plans for single-source or low-diversity parts. If sourcing diversity is weak, leadership should evaluate second-source qualification before launch risk becomes production risk.
 
-Across all five, the theme is the same: concentrate effort on the vital few, the highest-value exposures, most concentrated suppliers, worst variance, for the most risk reduction per unit of effort.
+Across all five, the theme is the same: concentrate effort on the vital few: the highest-value exposures, the most concentrated supplier risks, and the largest forecast variances.
 
 ##  Tools & Techniques
 **SQL** (CTEs, window functions, conditional aggregation, multi-table joins) · **Power BI**
