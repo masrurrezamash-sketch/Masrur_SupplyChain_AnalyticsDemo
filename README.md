@@ -43,7 +43,7 @@ Based on the demo dashboard, leadership can quickly:
 
 
 Through this operational dashboard, a program manager can:
-- Filter to a single region or program and instantly review on-time delivery, open PO value which can be drilled into for root-cause investigation
+- Filter to a single region or program and instantly review on-time delivery and open PO value, then drill into root-cause indicators
 - View overall inventory health by region and identify where inventory may need to be reallocated
 - Identify the Top 5 at-risk parts by coverage and determine where recovery plans, risk buys, or supplier escalations are needed
 - Review overall Clean Launch % for NPI milestones and drill into the exact status, challenge, and next step
@@ -73,7 +73,7 @@ Through this operational dashboard, a program manager can:
 
 **The question it answers:** What is going to run dry before we can refill it? This is the depletion check, coverage weeks measured against lead time. 
 
-**My recommendation:** Place risk buys or qualify alternate sources now for any part where coverage runs below lead time, and raise the reorder points on these parts to reflect current lead times rather than historical ones, so early-warning triggers appears on time during next cycle instead of too late.
+**My recommendation:** Place risk buys or qualify alternate sources now for any part where coverage runs below lead time, and raise the reorder points on these parts to reflect current lead times rather than historical ones, so early-warning triggers appear on time during next cycle instead of too late.
 
 <br/>
 
