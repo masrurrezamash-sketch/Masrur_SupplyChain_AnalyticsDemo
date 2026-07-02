@@ -60,7 +60,8 @@ Through this operational dashboard, a program manager can:
 *Tracks total financial exposure and delayed units caused by logistics bottlenecks across manufacturing factories.*
 ![SQL Output 1](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput1.png)
 
-**The question it answers:** How much capital is exposed right now, and where? It quantifies the dollars sitting in delayed and open POs, broken out by factory. This tells the program manager where to prioritize in order to reduce the highest exposures.
+**The question it answers:** How much capital is exposed right now, and where? It quantifies the dollars sitting in delayed and open POs, broken out by factory. 
+**My recommendation:** Prioritize logistics  on the highest-value delayed POs first, since exposure is concentrated rather than evenly spread. Work with procurement, logistics, and suppliers to confirm recovery dates, unblock receiving issues, and create a weekly recovery tracker for delayed PO exposure.
 
 <br/>
 
@@ -68,7 +69,9 @@ Through this operational dashboard, a program manager can:
 *Cross-references inventory on-hand against component burn rates and supplier lead times to flag parts that will stock out before replenishment can arrive.*
 ![SQL Output 2](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput2.png)
 
-**The question it answers:** What is going to run dry before we can refill it? This is the depletion check, coverage weeks measured against lead time. This tells the program manager which parts need an emergency order, a deviation, or a reallocation, today, before they stop a build.
+**The question it answers:** What is going to run dry before we can refill it? This is the depletion check, coverage weeks measured against lead time. 
+
+**My recommendation:** Place risk buys or qualify alternate sources now for any part where coverage runs below lead time, and raise the reorder points on these parts to reflect current lead times rather than historical ones, so the early-warning triggers appears on time during next cycle instead of too late.
 
 <br/>
 
@@ -76,7 +79,10 @@ Through this operational dashboard, a program manager can:
 *Evaluates vendor delivery metrics and classifies spend into tiers to pinpoint supplier concentration risk.*
 ![SQL Output 3](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput3.png)
 
-**The question it answers:** Where is our supplier risk concentrated? It ranks suppliers by spend and performance, showing which handful carry most of the exposure. This tells the program manager which  suppliers warrant a second source, a scorecard conversation, or tighter management, the highest-leverage places to reduce risk.
+**The question it answers:** Where is our supplier risk concentrated? It ranks suppliers by spend and performance, showing which handful carry most of the exposure. This tells the program manager which suppliers warrant a second source, a scorecard conversation, or tighter management, the highest-leverage places to reduce risk.
+
+**My recommendation:** For high-spend suppliers with elevated risk ratings, initiate executive supplier reviews, require recovery plans, evaluate second-source options.
+
 
 <br/>
 
@@ -84,7 +90,9 @@ Through this operational dashboard, a program manager can:
 *Aggregates forecast-to-actual variance across Programs A to E to surface the parts driving the biggest tracking errors.*
 ![SQL Output 4](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput4.png)
 
-**The question it answers:** Where are our forecasts missing, and which parts are driving it? It isolates the largest forecast-to-actual gaps by program and part. This helps the program manager identify where the demand signal needs tightening, because these are the parts most likely to cause surprise shortages downstream.
+**The question it answers:** Where are our forecasts missing, and which parts are driving it? 
+
+**My recommendation:** Review the highest-variance parts with demand planning, product, sales, and supply teams. Validate whether the miss is caused by launch ramp changes, customer pull-ins, poor forecast assumptions, or supply constraints. For parts with repeated upside demand misses, adjust procurement commits or safety stock. For downside misses, reduce exposure before excess inventory builds.
 
 <br/>
 
@@ -92,7 +100,11 @@ Through this operational dashboard, a program manager can:
 *Monitors milestone completion rates and multi-sourcing percentages to gauge pre-production launch readiness.*
 ![SQL Output 5](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput5.png)
 
-**The question it answers:** Are our new product launches on track and de-risked? It tracks milestone completion and sourcing diversity across programs. This tells the program manager which NPIs need more sourcing diversity before they reach mass production.
+**The question it answers:** Are our new product launches on track and de-risked? It tracks milestone completion and sourcing diversity across programs. 
+
+**My recommendation:** Hold launch readiness reviews before product launch, assign owners to incomplete milestones, and require mitigation plans for single-source or low-diversity parts. If sourcing diversity is weak, leadership should evaluate second-source qualification before launch risk becomes production risk.
+
+Across all five, the theme is the same: concentrate effort on the vital few, the highest-value exposures, most concentrated suppliers, worst variance, for the most risk reduction per unit of effort.
 
 ##  Tools & Techniques
 **SQL** (CTEs, window functions, conditional aggregation, multi-table joins) · **Power BI**
