@@ -27,10 +27,11 @@ This project follows a simple operating model:
 
 ![Power BI Preview](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/93f14fc85388cc4a6c86673642c2960d63d310bf/PbDB.png)
 
-Based on the demo dashboard leadership can be made aware at a single glance:
-- Red flagged parts which require a recovery plan
-- Top 5 suppliers driving nearly half of all spend and whether this supplier concentration calls for a second source
-- Whether the forecast gap is a one-off or a trend that needs to be reviewed with demand planning.
+Based on the demo dashboard, leadership can quickly:
+- Identify red-flagged parts that require recovery plans, risk buys, or supplier escalation
+- Review the Top 5 suppliers driving the largest share of spend and determine whether supplier concentration requires second-source planning
+- Compare forecast versus actual demand to determine whether gaps are one-time misses or recurring trends requiring demand-planning review
+- Filter by region or program to isolate where supply risk, forecast variance, or launch-readiness issues are concentrated
 
 
 <br/>
