@@ -61,6 +61,7 @@ Through this operational dashboard, a program manager can:
 ![SQL Output 1](https://github.com/masrurrezamash-sketch/Masrur_SupplyChain_AnalyticsDemo/blob/42ee390ea0030180f6035737d477c3961069ca26/SqlOutput1.png)
 
 **The question it answers:** How much capital is exposed right now, and where? It quantifies the dollars sitting in delayed and open POs, broken out by factory. 
+
 **My recommendation:** Prioritize logistics  on the highest-value delayed POs first, since exposure is concentrated rather than evenly spread. Work with procurement, logistics, and suppliers to confirm recovery dates, unblock receiving issues, and create a weekly recovery tracker for delayed PO exposure.
 
 <br/>
